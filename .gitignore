@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/FFHQ_small/
+/experiment/
+/PhenoBench-v100/

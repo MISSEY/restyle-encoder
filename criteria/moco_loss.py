@@ -42,6 +42,8 @@ class MocoLoss(nn.Module):
         x_feats = self.model(x)
         x_feats = nn.functional.normalize(x_feats, dim=1)
         x_feats = x_feats.squeeze()
+        if x_feats.ndim == 1:
+            x_feats = x_feats.reshape((1,x_feats.shape[0]))
         return x_feats
 
     def forward(self, y_hat, y, x):

@@ -1,5 +1,5 @@
 dataset_paths = {
-	'ffhq': '',
+	'ffhq': 'FFHQ_small/images',
 	'celeba_test': '',
 
 	'cars_train': '',
@@ -12,7 +12,9 @@ dataset_paths = {
 	'horse_test': '',
 
 	'afhq_wild_train': '',
-	'afhq_wild_test': ''
+	'afhq_wild_test': '',
+	'phenobench_train':'PhenoBench-v100/PhenoBench/train/images',
+	'phenobench_test':'PhenoBench-v100/PhenoBench/test/images',
 }
 
 model_paths = {

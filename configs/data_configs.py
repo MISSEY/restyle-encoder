@@ -7,8 +7,8 @@ DATASETS = {
 		'transforms': transforms_config.EncodeTransforms,
 		'train_source_root': dataset_paths['ffhq'],
 		'train_target_root': dataset_paths['ffhq'],
-		'test_source_root': dataset_paths['celeba_test'],
-		'test_target_root': dataset_paths['celeba_test']
+		'test_source_root': dataset_paths['ffhq'],
+		'test_target_root': dataset_paths['ffhq']
 	},
 	"cars_encode": {
 		'transforms': transforms_config.CarsEncodeTransforms,
@@ -44,5 +44,12 @@ DATASETS = {
 		'train_target_root': dataset_paths['ffhq'],
 		'test_source_root': dataset_paths['celeba_test'],
 		'test_target_root': dataset_paths['celeba_test']
-	}
+	},
+	'phenobench': {
+		'transforms': transforms_config.EncodeTransforms,
+		'train_source_root': dataset_paths['phenobench_train'],
+		'train_target_root': dataset_paths['phenobench_train'],
+		'test_source_root': dataset_paths['phenobench_test'],
+		'test_target_root': dataset_paths['phenobench_test']
+	},
 }
